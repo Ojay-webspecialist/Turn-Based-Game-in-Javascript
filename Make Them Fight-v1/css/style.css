@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	width:100%;
+	margin: 0;
+	padding: 0;
+}
+.container-fluid{
+	background-image: url("../Game Grid/images/bg.png") ; 
+	 background-repeat:no-repeat;
+	 background-size: cover;
+	 background-position: center center;
+	 /* min-width: 1200px;  */
+}
+
+.col-battlefield {
+	
+	padding-top:50px;
+	padding-bottom: 50px;
+	
+	
+} 
+
+.playerRow{
+	
+	/* flex: 0 0 40%; */
+	/* flex-direction: row; */
+	min-width:50rem;
+	/* max-width: 40%;  */
+}
+/* .col-playerBcomponent{
+	
+	max-width: 20%;
+	position: relative;
+	left: 0;
+
+	/* background-image: url("../Game Grid/images/bg.png") ; 
+	 background-repeat:no-repeat;
+	 background-size: cover;
+	 
+	 background-position: center center; */
+
+ #battleField{
+	
+	/*
+	font-size: 0;
+	margin:auto; */
+	
+	display: grid;
+	grid-gap: 0px;
+	width: 900px;
+	height: 750px;
+	margin: auto; 
+		
+      
+}
+/* .grid-item{
+    border:none;
+	outline:1px solid #000;
+	display:inline-block;
+} */
+.unavailable{
+	
+	/* z-index: 1; */
+	background-image: url("../Game Grid/images/brick_wallI.jpg") !important; 
+	background-repeat: no-repeat;
+    background-size: contain, auto;
+    background-position: center, center;
+	
+
+}
+.grid-item{
+    
+	/* background-image: url("../Game Grid/images/battleGrnd.png"); */
+    background-repeat: no-repeat;
+    background-size: contain, auto;
+	background-position: center, center;
+	border: 2px solid	rgb(11, 82, 11);
+	
+}
+
+.bow{
+	background-image: url("../Game Grid/images/bow_large_png.png");
+	background-repeat: no-repeat;
+    background-size: contain, auto;
+    background-position: center, center;
+}
+.spear{
+	background-image: url("../Game Grid/images/sword_large.png"),url("../Game Grid/images/brick_wallI.jpg");
+	background-repeat: no-repeat;
+    background-size: contain, auto;
+    background-position: center, center;
+}
+.dagger{
+	background-image: url("../Game Grid/images/dagger_large_png.png");
+	
+	background-repeat: no-repeat;	
+    background-size: contain, auto;
+    background-position: center, center;
+}
+.sword{
+	background-image: url("../Game Grid/images/war_sledge_hammer.jpg");
+	
+	background-repeat: no-repeat;	
+    background-size: contain,auto;
+    background-position: center, center;
+}
+.player1{
+	background-image: url("../Game Grid/images/african warriorA.jpg");
+	
+	background-repeat: no-repeat;	
+    background-size: contain,auto;
+    background-position: center, center;
+}
+.player2{
+	background-image: url("../Game Grid/images/warrior 3.jpg");
+	
+	background-repeat: no-repeat;	
+    background-size: contain,auto;
+    background-position: center, center;
+}

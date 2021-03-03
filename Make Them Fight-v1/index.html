@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Truce Project</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        <div class="container-fluid ">
+            <div class="row  ">
+               
+                    <div class="col-md-auto mx-auto mt-2 playerRow "  > <!--Component holding the players image,score,weapon and control buttons-->
+                        
+                        <div class="row ">
+                            <div class="col-6 " >
+                                <div class="card mx-auto vh-70" style="width: 20rem;height: 44rem;top: 4rem;">
+                                    <img class="card-img-top img-responsive" src="./images/african warriorA.jpg" alt="Card image cap" style=" height:20rem">
+                                    <div class="card-body ">
+                                    <h5 class="card-title text-center">Safari</h5>
+                                    <p class="card-text player-1-health"><br> </p>
+                                    <p class="card-text player-1-damage"><br> </p>
+                                    <p class="card-text player-1-weapon-name"></p>
+                                    <button  style="height: 3em;" href="#" class="btn btn-danger w-100 text-center mx-auto d-block mb-3 player-1-defend-btn" type = 'button'>Defend</button>
+                                    <button  style="height: 3em;" href="#" class="btn btn-success w-100 mx-auto d-block  player-1-attack-btn">Attack</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-6 ">
+                                <div class="card mx-auto vh-70 " style="width: 20rem;height: 44rem;top: 4rem;">
+                                    <img class="card-img-top img-responsive" src="./images/warrior 3.jpg" alt="Card image cap" style=" height:20rem">
+                                    <div class="card-body ">
+                                            <h5 class="card-title text-center">Sahara</h5>
+                                            <p class="card-text player-2-health"><br> </p>
+                                            <p class="card-text player-2-damage"><br> </p>
+                                            <p class="card-text player-2-weapon-name"></p>
+                                            <button style="height: 3em;" href="#" class="btn btn-danger w-100 text-center mx-auto d-block mb-3 player-2-defend-btn">Defend</button>
+                                            <button style="height: 3em;" href="#" class="btn btn-success w-100 mx-auto d-block player-2-attack-btn">Attack</button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div> 
+                    </div>
+                   
+                    <div class="col mt-4   col-battlefield"  >
+                        <div class="row" id="battleField">
+
+
+                        </div> 
+
+                    </div>
+
+
+                    <div>
+                        <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content  ">
+                                <span class="close">&times;</span>
+                               
+                               <div class="  ">
+                                   
+                               
+                               <p class=" text-center display-2 font-bold">Welcome to Game of  truce </p>
+                               <p style="padding-left:10%; font-size:1.5rem; font-weight: bold;" class=""> Instructions are: <br> 1.The battle begins when the players are vertically or horizantally next to each other<br> 
+                                2. Only three sets of movements are allowed as shwon by the highlighted tiles <br> 3. Use the pane at the left for battle (defend or Attack)</p>
+                               <p class="text-center   " style=" font-size: 1.6rem;color:orange">Click outside the modal to  start game</p>
+                                </div>
+                            
+                            </div>
+                         </div>
+
+                          <!-- The result modal -->
+                            <div id="" class="result-container">
+
+                                <!-- Modal content -->
+                                <div class="modal-contents  ">
+                                <span class="exit">&times;</span>
+                            
+                                    <div class=" d-block mx-auto ">
+                                    
+                                    <p class="win-text text-center  " style="font-size:2.3em;"></p>
+                                    <img class="winner-image " style="margin:auto; display: block;" src="" alt="winner-image">
+                                    
+
+                                <div class="d-block   mx-auto" style="text-align:center">
+                                    <a type="button" href="./index.html" class="btn btn-success  text-center  " style="margin-top:2em; width:10em">Play again</a>
+                                    <button href="#" onclick="window.close()" class="btn btn-danger   " style="margin-top:2em; width:10em">Exit</button>
+                                </div>
+                                    </div>
+                                 </div>
+ 
+                            </div>  
+            
+                    </div> 
+            </div>
+        </div>
+           
+        <!-- <div class="result-container">
+            <p class="win-text " style="font-size: larger;"></p>
+            <img class="winner-image" src="" alt="winner-image">
+            <a href = './index.html'>Play again</a>
+            
+        </div> -->
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script type="module" src="./main.js" ></script>
+
+</html>
