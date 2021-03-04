@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	width:100%;
+	margin: 0;
+	padding: 0;
+	/* min-width: max-content; */
+
+}
+
+.container-fluid{
+	background-image: url("./images/bg.png") ; 
+	background-blend-mode:darken;
+	 background-repeat:no-repeat;
+	 background-size: cover;
+	 background-position: center center;
+	  /* min-width: 1200px;   */
+	  /* min-width: max-content; */
+
+}
+
+.col-battlefield {
+	
+	padding-top:50px;
+	padding-bottom: 50px;
+	min-width: max-content;
+
+} 
+
+/* .playerRow{
+	
+	/* flex: 0 0 40%; */
+	/* flex-direction: row; */
+	/* min-width:50rem; */
+	/* max-width: 40%;  */
+/*
+
+/* .col-playerBcomponent{
+	
+	max-width: 20%;
+	position: relative;
+	left: 0;
+
+	/* background-image: url("../Game Grid/images/bg.png") ; 
+	 background-repeat:no-repeat;
+	 background-size: cover;
+	 
+	 background-position: center center; */
+
+ #battleField{
+	
+	/*
+	font-size: 0;
+	margin:auto; */
+	
+	display: grid;
+	grid-gap: 0px;
+	width: 900px;
+	height: 750px;
+	margin: auto; 
+	background-image: url("./images/battleGrass.jpg"); 
+	background-repeat: repeat; 	
+    border: 1px solid #1f5916;
+}
+/* .grid-item{
+    border:none;
+	outline:1px solid #000;
+	display:inline-block;
+} */
+.blocks{
+	
+	 
+	background-image: url("./images/brick_wallI.jpg") ; 
+	/* background-repeat: no-repeat;
+    background-size: contain, auto;
+	background-position: center, center; */
+	background-size: contain, auto;
+}
+.tileImg{
+    
+	background-image: url("./images/battleGrass.jpg"); 
+    /* background-repeat: no-repeat;
+    
+	background-position: center, center; */
+	/* border: 2px solid	rgb(11, 82, 11); */
+	/* background-size: contain, auto; */
+	/* background: white; */
+	border: 2px solid	rgb(11, 82, 11); 
+	 background-size: contain, auto;
+}
+
+.axe{
+	background-image: url("./images/axe.jpg");
+	background-repeat: no-repeat;
+    background-size: contain,auto;
+	 /* background-position: center, center; */
+	/* background-color: rgb(11, 82, 11); */
+}
+.bow{
+	background-image: url("./images/bow.jpg");
+	background-repeat: no-repeat;
+    background-size: contain, auto;
+	/* background-position: center, center; */
+	/* background-color: rgb(11, 82, 11); */
+}
+.sledge{
+	background-image: url("./images/sledge.jpg");
+	
+	background-repeat: no-repeat;	
+    background-size: contain, auto;
+	/* background-position: center, center;  */
+	/* background-color: rgb(38,60,35); */
+}
+.sword{
+	background-image: url("./images/sword.jpg");
+	
+	 background-repeat: no-repeat;	 
+     background-size: contain,auto; 
+     /* background-position: center, center;  */
+}
+.dagger{
+	background-image: url("./images/dagger.jpg");
+	
+	 background-repeat: no-repeat;	 
+     background-size: contain,auto; 
+     /* background-position: center, center,center,center;  */
+}
+.safari{
+	background-image: url("./images/safari.jpg");
+	
+	/* background-repeat: no-repeat;	 */
+    background-size: contain,auto;
+    background-position: center, center;
+}
+.sahara{
+	background-image: url("./images/sahara.jpg");
+	
+	/* background-repeat: no-repeat;	 */
+    background-size: contain,auto;
+    /* background-position: center, center; */
+}
+.showMovements{
+	background-color: rgba(157, 147, 11, 0.761);
+}
+
+.showMovements:hover{
+	cursor: pointer;
+}
+
+.player-1-attack-btn{
+
+
+}
+.player-1-defend-btn{
+
+}
+.player-2-attack-btn{
+
+}
+.player-2-defend-btn{
+
+
+}
+.player-1-weapon-name{
+
+
+}
+.player-2-weapon-name{
+
+}
+
+.card-text{
+
+	font-size: larger;
+	font-weight: bold;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: clip; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.569); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+  /*
+  .result-container{
+	  padding : 200px 400px 200px 400px;
+	  background-color: #fff;
+	  position: absolute;
+	  z-index : 20;
+	  top : 20%;
+	  left : 35%;
+	  display : none; 
+	  
+  
+  */
+  .result-container {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: clip; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.898); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-contents {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 40%; /* Could be more or less, depending on screen size */
+	border-radius: 15px;
+  }
+  .exit:hover,
+  .exit:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  .winner-image{
+		width: 30%;
+		height: 30%;
+		border: 3px solid #888;
+		border-radius: 5px;
+  }
+  a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+	border: 2px solid ;
+	border-radius:10px;
+   
+	
+	padding	: 2px;
+}
+a.button:hover{
+	background-color: rgb(194, 211, 194);
+	color:  white;
+}
