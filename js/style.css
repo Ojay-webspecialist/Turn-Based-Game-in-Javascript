@@ -11,7 +11,7 @@ body{
 }
 
 .container-fluid{
-	background-image: url("./images/bg.png") ; 
+	background-image: url("../images/bg.png") ; 
 	background-blend-mode:darken;
 	 background-repeat:no-repeat;
 	 background-size: cover;
@@ -60,7 +60,7 @@ body{
 	width: 900px;
 	height: 750px;
 	margin: auto; 
-	background-image: url("./images/battleGrass.jpg"); 
+	background-image: url("../images/battleGrass.jpg"); 
 	background-repeat: repeat; 	
     border: 1px solid #1f5916;
 }
@@ -72,7 +72,7 @@ body{
 .blocks{
 	
 	 
-	background-image: url("./images/brick_wallI.jpg") ; 
+	background-image: url("../images/brick_wallI.jpg") ; 
 	/* background-repeat: no-repeat;
     background-size: contain, auto;
 	background-position: center, center; */
@@ -80,7 +80,7 @@ body{
 }
 .tileImg{
     
-	background-image: url("./images/battleGrass.jpg"); 
+	background-image: url("../images/battleGrass.jpg"); 
     /* background-repeat: no-repeat;
     
 	background-position: center, center; */
@@ -92,21 +92,21 @@ body{
 }
 
 .axe{
-	background-image: url("./images/axe.jpg");
+	background-image: url("../images/axe.jpg");
 	background-repeat: no-repeat;
     background-size: contain,auto;
 	 /* background-position: center, center; */
 	/* background-color: rgb(11, 82, 11); */
 }
 .bow{
-	background-image: url("./images/bow.jpg");
+	background-image: url("../images/bow.jpg");
 	background-repeat: no-repeat;
     background-size: contain, auto;
 	/* background-position: center, center; */
 	/* background-color: rgb(11, 82, 11); */
 }
 .sledge{
-	background-image: url("./images/sledge.jpg");
+	background-image: url("../images/sledge.jpg");
 	
 	background-repeat: no-repeat;	
     background-size: contain, auto;
@@ -114,28 +114,28 @@ body{
 	/* background-color: rgb(38,60,35); */
 }
 .sword{
-	background-image: url("./images/sword.jpg");
+	background-image: url("../images/sword.jpg");
 	
 	 background-repeat: no-repeat;	 
      background-size: contain,auto; 
      /* background-position: center, center;  */
 }
 .dagger{
-	background-image: url("./images/dagger.jpg");
+	background-image: url("../images/dagger.jpg");
 	
 	 background-repeat: no-repeat;	 
      background-size: contain,auto; 
      /* background-position: center, center,center,center;  */
 }
 .safari{
-	background-image: url("./images/safari.jpg");
+	background-image: url("../images/safari.jpg");
 	
 	/* background-repeat: no-repeat;	 */
     background-size: contain,auto;
     background-position: center, center;
 }
 .sahara{
-	background-image: url("./images/sahara.jpg");
+	background-image: url("../images/sahara.jpg");
 	
 	/* background-repeat: no-repeat;	 */
     background-size: contain,auto;
